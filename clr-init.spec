@@ -4,7 +4,7 @@
 #
 Name     : clr-init
 Version  : 0.1.2
-Release  : 3
+Release  : 4
 URL      : https://github.com/clearlinux/clr-init/archive/V0.1.2.tar.gz
 Source0  : https://github.com/clearlinux/clr-init/archive/V0.1.2.tar.gz
 Summary  : No detailed summary available
