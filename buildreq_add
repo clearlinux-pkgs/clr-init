@@ -5,3 +5,4 @@ systemd-cryptsetup
 systemd-hwdb
 LVM2
 util-linux-bin
+glibc-bin
