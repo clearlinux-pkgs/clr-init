@@ -4,23 +4,31 @@
 #
 Name     : clr-init
 Version  : 0.2.7
-Release  : 10
+Release  : 11
 URL      : https://github.com/clearlinux/clr-init/archive/V0.2.7.tar.gz
 Source0  : https://github.com/clearlinux/clr-init/archive/V0.2.7.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-3.0
+Requires: clr-init-license
 BuildRequires : LVM2
 BuildRequires : glibc-bin
 BuildRequires : systemd
-BuildRequires : systemd-cryptsetup
-BuildRequires : systemd-hwdb
+BuildRequires : systemd-extras
 BuildRequires : util-linux-bin
 
 %description
 ## clr-init
 Initrd created using systemd as init program
 ## Luks Encryption support
+
+%package license
+Summary: license components for the clr-init package.
+Group: Default
+
+%description license
+license components for the clr-init package.
+
 
 %prep
 %setup -q -n clr-init-0.2.7
@@ -30,14 +38,20 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1527648480
+export SOURCE_DATE_EPOCH=1530036605
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1527648480
+export SOURCE_DATE_EPOCH=1530036605
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/doc/clr-init
+cp COPYING %{buildroot}/usr/share/doc/clr-init/COPYING
 %make_install
 
 %files
 %defattr(-,root,root,-)
 /usr/lib/initrd.d/clr-init.cpio.gz
+
+%files license
+%defattr(-,root,root,-)
+/usr/share/doc/clr-init/COPYING

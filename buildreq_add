@@ -1,8 +1,7 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
 systemd
-systemd-cryptsetup
-systemd-hwdb
+systemd-extras
 LVM2
 util-linux-bin
 glibc-bin
