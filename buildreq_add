@@ -5,3 +5,4 @@ systemd-extras
 LVM2
 util-linux-bin
 glibc-bin
+multipath-tools
