@@ -4,7 +4,7 @@
 #
 Name     : clr-init
 Version  : 1.0.9
-Release  : 21
+Release  : 22
 URL      : https://github.com/clearlinux/clr-init/archive/V1.0.9.tar.gz
 Source0  : https://github.com/clearlinux/clr-init/archive/V1.0.9.tar.gz
 Summary  : No detailed summary available
@@ -55,7 +55,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1559348341
+export SOURCE_DATE_EPOCH=1559356240
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
@@ -65,7 +65,7 @@ make  %{?_smp_mflags}
 
 
 %install
-export SOURCE_DATE_EPOCH=1559348341
+export SOURCE_DATE_EPOCH=1559356240
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/clr-init
 cp COPYING %{buildroot}/usr/share/package-licenses/clr-init/COPYING
