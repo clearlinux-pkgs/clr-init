@@ -21,5 +21,4 @@ bluez
 libinput
 libmtp
 thunderbolt-software-user-space
-libgfortran-avx
 glibc-lib-avx2
