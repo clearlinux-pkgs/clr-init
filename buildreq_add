@@ -3,6 +3,7 @@
 systemd
 systemd-extras
 LVM2
+LVM2-extras
 util-linux-bin
 glibc-bin
 multipath-tools
@@ -22,3 +23,15 @@ libinput
 libmtp
 thunderbolt-software-user-space
 glibc-lib-avx2
+ModemManager
+clr-systemd-config
+fwupd
+upower
+colord
+NetworkManager
+pulseaudio
+rdma-core
+gnome-settings-daemon
+alsa-utils
+udisks2
+fuse
