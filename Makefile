@@ -1,5 +1,5 @@
 PKG_NAME := clr-init
-URL = https://github.com/clearlinux/clr-init/archive/V1.0.18.tar.gz
+URL = https://github.com/clearlinux/clr-init/archive/V1.0.19.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
