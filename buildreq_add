@@ -26,7 +26,6 @@ glibc-lib-avx2
 ModemManager
 clr-systemd-config
 fwupd
-fwupdate
 upower
 colord
 NetworkManager

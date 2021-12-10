@@ -4,7 +4,7 @@
 #
 Name     : clr-init
 Version  : 1.0.19
-Release  : 36
+Release  : 37
 URL      : https://github.com/clearlinux/clr-init/archive/V1.0.19.tar.gz
 Source0  : https://github.com/clearlinux/clr-init/archive/V1.0.19.tar.gz
 Summary  : No detailed summary available
@@ -24,7 +24,6 @@ BuildRequires : dosfstools
 BuildRequires : e2fsprogs
 BuildRequires : fuse
 BuildRequires : fwupd
-BuildRequires : fwupdate
 BuildRequires : glibc-bin
 BuildRequires : glibc-lib-avx2
 BuildRequires : gnome-settings-daemon
@@ -69,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1629763010
+export SOURCE_DATE_EPOCH=1639161536
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -79,7 +78,7 @@ make  %{?_smp_mflags}
 
 
 %install
-export SOURCE_DATE_EPOCH=1629763010
+export SOURCE_DATE_EPOCH=1639161536
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/clr-init
 cp %{_builddir}/clr-init-1.0.19/COPYING %{buildroot}/usr/share/package-licenses/clr-init/8624bcdae55baeef00cd11d5dfcfa60f68710a02
