@@ -6,10 +6,10 @@
 # autospec commit: 99a7985
 #
 Name     : clr-init
-Version  : 1.2.0
-Release  : 39
-URL      : https://github.com/clearlinux/clr-init/archive/V1.2.0/clr-init-1.2.0.tar.gz
-Source0  : https://github.com/clearlinux/clr-init/archive/V1.2.0/clr-init-1.2.0.tar.gz
+Version  : 1.2.1
+Release  : 40
+URL      : https://github.com/clearlinux/clr-init/archive/V1.2.1/clr-init-1.2.1.tar.gz
+Source0  : https://github.com/clearlinux/clr-init/archive/V1.2.1/clr-init-1.2.1.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-3.0
@@ -66,15 +66,15 @@ license components for the clr-init package.
 
 
 %prep
-%setup -q -n clr-init-1.2.0
-cd %{_builddir}/clr-init-1.2.0
+%setup -q -n clr-init-1.2.1
+cd %{_builddir}/clr-init-1.2.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1747851076
+export SOURCE_DATE_EPOCH=1747955240
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -102,7 +102,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1747851076
+export SOURCE_DATE_EPOCH=1747955240
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/clr-init
 cp %{_builddir}/clr-init-%{version}/COPYING %{buildroot}/usr/share/package-licenses/clr-init/8624bcdae55baeef00cd11d5dfcfa60f68710a02 || :
